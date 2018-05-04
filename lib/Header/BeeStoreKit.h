@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, PaymentRequestProductCode) {
+    PaymentRequestSuccess = 0,
+    PaymentNotExistProduct = -1,
+    PaymentNotAvailableProduct = -2,
+    PaymentCannotMakeRequest = -3,
+};
+
 extern NSString *const kBeeStoreKitProductsAvailableNotification;
 
 extern NSString *const kBeeStoreKitProductsAvailableFailedNotification;
@@ -74,7 +81,7 @@ extern NSString *const kBeeStoreKitDownloadCompletedNotification;
 - (void)startProductRequestWithProductIdentifiers:(NSArray*)items;
 - (void)restorePurchases;
 - (void)refreshAppStoreReceipt;
-- (void)initiatePaymentRequestForProductWithIdentifier:(NSString *)productId;
+- (PaymentRequestProductCode)initiatePaymentRequestForProductWithIdentifier:(NSString *)productId;
 - (BOOL)purchasedAppBeforeVersion:(NSString *)requiredVersion;
 - (BOOL)isProductPurchased:(NSString *)productId;
 - (NSDate *)expiryDateForProduct:(NSString *)productId;
