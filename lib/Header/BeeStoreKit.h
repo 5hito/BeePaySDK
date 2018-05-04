@@ -20,9 +20,14 @@ extern NSString *const kBeeStoreKitProductsAvailableNotification;
 extern NSString *const kBeeStoreKitProductsAvailableFailedNotification;
 
 /*!
+ *  @abstract This notification is posted when BeeStoreKit purchasing of a product
+ */
+extern NSString *const kBeeStoreKitProductPurchasingNotification;
+
+/*!
  *  @abstract This notification is posted when BeeStoreKit completes purchase of a product
  */
-extern NSString *const kBeeStoreKitProductPurchasedNotification;
+extern NSString *const kBeeStoreKitProductPurchasedSuccessNotification;
 
 /*!
  *  @abstract This notification is posted when BeeStoreKit fails to complete the purchase of a product
