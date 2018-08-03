@@ -81,6 +81,7 @@ extern NSString *const kBeeStoreKitDownloadCompletedNotification;
 @property NSMutableDictionary *purchaseRecord;
 
 + (instancetype)sharedKit;
+- (void)validatePurchaseConfigs:(NSDictionary*)configs;
 - (void)startValidateConfigs:(NSDictionary*)configs;
 - (void)startProductRequest;
 - (void)startProductRequestWithProductIdentifiers:(NSArray*)items;
