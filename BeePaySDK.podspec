@@ -2,10 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeePaySDK"
-  s.version      = "0.0.7"
+  s.version      = "0.1.0"
   s.summary      = "集合支付相关sdk"
   s.description  = <<-DESC
     0.0.x:苹果支付接口整合
+    0.1.0:bitcode
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeePaySDK"
