@@ -83,6 +83,7 @@ extern NSString *const kBeeStoreKitDownloadCompletedNotification;
 + (instancetype)sharedKit;
 - (void)validatePurchaseConfigs:(NSDictionary*)configs;
 - (void)startValidateConfigs:(NSDictionary*)configs;
+- (NSString*)getAppStorePurchaseReceiptData;
 - (void)startProductRequest;
 - (void)startProductRequestWithProductIdentifiers:(NSArray*)items;
 - (void)restorePurchases;
