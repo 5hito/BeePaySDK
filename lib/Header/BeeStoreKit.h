@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "BeePayNotificationHeader.h"
-#import "BeePayEnumHeader.h"
+
+typedef NS_ENUM(NSInteger, BeePaymentRequestProductCode) {
+    BeePaymentRequestSuccess = 0,
+    BeePaymentNotExistProduct = -1,
+    BeePaymentNotAvailableProduct = -2,
+    BeePaymentCannotMakeRequest = -3,
+};
 
 @interface BeeStoreKit : NSObject
 
