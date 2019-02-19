@@ -12,12 +12,11 @@
 
 //内购id
 @property (nonatomic, strong) NSString* productID;
-
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) NSString* subTitle;
 @property (nonatomic, strong) NSString* present;//节省
 @property (nonatomic, strong) NSString* freeDay;//免费天数
-@property (nonatomic, strong) NSString* moeny;//订阅价格
+@property (nonatomic, strong) NSString* money;//订阅价格
 
 @end
 
