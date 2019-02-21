@@ -57,7 +57,13 @@
 
 @property (nonatomic, assign) CGFloat topOffset;
 @property (nonatomic, assign) CGFloat bottomOffset;
+
+//关闭按钮、恢复购买按钮
+@property (nonatomic, assign) UIEdgeInsets buttonEdge;
 @property (nonatomic, assign) NSInteger showTime;//关闭按钮多少秒后显示
+@property (nonatomic, strong) UIImage* closeImage;
+@property (nonatomic, strong) UIColor* restoreColor;
+@property (nonatomic, strong) UIImage* restoreImage;
 
 @property (nonatomic, strong) UIImage* backgroundImage;//背景图
 @property (nonatomic, strong) UIImage* logoImage;//应用图
