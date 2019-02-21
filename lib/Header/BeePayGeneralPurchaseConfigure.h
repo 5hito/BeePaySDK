@@ -72,8 +72,8 @@
 @property (nonatomic, strong) NSArray<BeePayPurchaseItem*>* purchaseArr;//内购项目
 @property (nonatomic, strong) UIColor* purchaseDescribeColor;//描述颜色值
 
+//popular
 @property(nonatomic, strong) UIImage* tryFreeImage;//试用图片
-@property(nonatomic, strong) NSString* tryFreeTitle;//试用描述
 @property(nonatomic, strong) UIColor* tryFreeTitleColor;//试用描述颜色
 @property(nonatomic, strong) BeePayTempleConfigure* templeConfig;//模板配置
 

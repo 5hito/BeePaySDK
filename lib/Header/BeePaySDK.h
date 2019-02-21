@@ -10,6 +10,7 @@
 #import "BeePayPopPurchaseConfigure.h"
 
 typedef NS_ENUM(NSInteger, BeePayPopType) {
+    BeePayPopCloseType = 0,//关闭
     BeePayPopWatchVideoType = 1,
     BeePayPopPurchasedType,
 };
