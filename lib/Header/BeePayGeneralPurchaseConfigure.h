@@ -59,9 +59,10 @@
 @property (nonatomic, assign) CGFloat bottomOffset;
 
 //关闭按钮、恢复购买按钮
-@property (nonatomic, assign) UIEdgeInsets buttonEdge;
-@property (nonatomic, assign) NSInteger showTime;//关闭按钮多少秒后显示
+@property (nonatomic, assign) UIEdgeInsets closeBtnEdge;
 @property (nonatomic, strong) UIImage* closeImage;
+@property (nonatomic, assign) NSInteger closeShowTime;//关闭按钮多少秒后显示
+@property (nonatomic, assign) UIEdgeInsets resotreBtnEdge;
 @property (nonatomic, strong) UIColor* restoreColor;
 @property (nonatomic, strong) UIImage* restoreImage;
 
@@ -72,6 +73,8 @@
 @property (nonatomic, strong) UIColor* headerTitleColor;//主标题颜色
 
 @property (nonatomic, strong) NSArray<NSString*>* featuresArr;//功能项
+@property (nonatomic, assign) UIEdgeInsets featuresEdge;//整个功能项边距
+@property (nonatomic, assign) CGFloat featuresSpace;//字间距
 @property (nonatomic, strong) UIColor* featuresGeneralColor;//功能项通用颜色
 @property (nonatomic, strong) UIColor* featuresPopularColor;//功能项热门颜色
 
