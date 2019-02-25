@@ -10,6 +10,9 @@
 
 @interface BeePayPurchaseItem : NSObject
 
+@property (nonatomic, assign) BOOL isDefaultPopular;
+@property (nonatomic, assign) NSInteger idx;//顺序
+
 //内购id
 @property (nonatomic, strong) NSString* productID;
 @property (nonatomic, strong) NSString* title;
@@ -18,6 +21,7 @@
 @property (nonatomic, strong) NSString* present;//节省
 @property (nonatomic, strong) NSString* freeDay;//免费天数
 @property (nonatomic, strong) NSString* money;//订阅价格
+
 
 @end
 

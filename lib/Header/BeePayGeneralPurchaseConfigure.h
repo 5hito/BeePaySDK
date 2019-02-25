@@ -73,7 +73,7 @@
 @property (nonatomic, strong) UIColor* headerTitleColor;//主标题颜色
 
 @property (nonatomic, strong) NSArray<NSString*>* featuresArr;//功能项
-@property (nonatomic, assign) UIEdgeInsets featuresEdge;//整个功能项边距
+@property (nonatomic, assign) CGFloat featuresHeight;//整个功能项高度
 @property (nonatomic, assign) CGFloat featuresSpace;//字间距
 @property (nonatomic, strong) UIColor* featuresGeneralColor;//功能项通用颜色
 @property (nonatomic, strong) UIColor* featuresPopularColor;//功能项热门颜色
