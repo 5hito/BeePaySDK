@@ -22,6 +22,8 @@
 @property (nonatomic, strong) NSString* freeDay;//免费天数
 @property (nonatomic, strong) NSString* money;//订阅价格
 
+@property (nonatomic, strong) NSString* popularTitle;
+@property (nonatomic, strong) NSString* popularSubTitle;
 
 @end
 
