@@ -76,7 +76,9 @@
 @property (nonatomic, assign) CGFloat featuresHeight;//整个功能项高度
 @property (nonatomic, assign) CGFloat featuresSpace;//字间距
 @property (nonatomic, strong) UIColor* featuresGeneralColor;//功能项通用颜色
+@property (nonatomic, strong) UIImage* featuresGeneralImage;//功能项通用图片
 @property (nonatomic, strong) UIColor* featuresPopularColor;//功能项热门颜色
+@property (nonatomic, strong) UIImage* featuresPopularImage;//功能项热门图片
 
 @property (nonatomic, strong) NSArray<BeePayPurchaseItem*>* purchaseArr;//内购项目
 @property (nonatomic, strong) UIColor* purchaseDescribeColor;//描述颜色值
