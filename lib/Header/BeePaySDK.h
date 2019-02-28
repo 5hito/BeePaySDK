@@ -12,7 +12,8 @@
 typedef NS_ENUM(NSInteger, BeePayPopType) {
     BeePayPopCloseType = 0,//关闭
     BeePayPopWatchVideoType = 1,
-    BeePayPopPurchasedType,
+    BeePayPopClickPurchasedType = 2,
+    BeePayPopPurchasedStateType = 3,
 };
 
 typedef void (^BeePayPopWindowCompletion)(BOOL success, BeePayPopType type, NSString* productID);

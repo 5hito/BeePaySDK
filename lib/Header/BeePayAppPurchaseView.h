@@ -13,10 +13,14 @@
 @protocol BeePayAppPurchaseViewDelegate <NSObject>
 
 - (void)BeePayClosePurchaseView:(BeePayAppPurchaseView*)purchaseView;
+
+- (void)BeePayUserClickRestore;
 - (void)BeePayUserRestoreSuccess:(NSString*)productID;
 - (void)BeePayUserRestoreFailed;
+
+- (void)BeePayUserClickPurchased:(NSString*)productID;
 - (void)BeePayUserPurchasedSuccess:(NSString*)productID;
-- (void)BeePayUserPurchasedFailed;
+- (void)BeePayUserPurchasedFailed:(NSString*)productID;;
 
 @end
 
