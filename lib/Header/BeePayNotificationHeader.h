@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const kBeeStoreKitProductsErrorConfigNotification;
+
 extern NSString *const kBeeStoreKitProductsAvailableNotification;
 
 extern NSString *const kBeeStoreKitProductsAvailableFailedNotification;
