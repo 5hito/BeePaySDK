@@ -71,6 +71,7 @@
 
 @property (nonatomic, strong) NSString* headerTitle;//主标题
 @property (nonatomic, strong) UIColor* headerTitleColor;//主标题颜色
+@property (nonatomic, strong) UIFont* headerTitleFont;//主标题
 
 @property (nonatomic, strong) NSArray<NSString*>* featuresArr;//功能项
 @property (nonatomic, assign) CGFloat featuresHeight;//整个功能项高度
