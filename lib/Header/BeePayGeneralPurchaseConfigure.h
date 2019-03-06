@@ -83,6 +83,7 @@
 
 @property (nonatomic, strong) NSArray<BeePayPurchaseItem*>* purchaseArr;//内购项目
 @property (nonatomic, strong) UIColor* purchaseDescribeColor;//描述颜色值
+@property (nonatomic, assign) BOOL hiddenPurchaseDescribe;//描述隐藏
 
 //popular
 @property(nonatomic, strong) UIImage* tryFreeImage;//试用图片
