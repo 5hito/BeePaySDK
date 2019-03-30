@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, BeePayPopType) {
 };
 
 typedef void (^BeePayPopWindowCompletion)(BOOL success, BeePayPopType type, NSString* productID);
+typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSString* productID, NSNumber* date);
 
 @interface BeePayIapConfigure : NSObject
 
@@ -36,5 +37,8 @@ typedef void (^BeePayPopWindowCompletion)(BOOL success, BeePayPopType type, NSSt
 
 //弹窗--controller不传，sdk默认是取最高层controller
 + (void)showPopWindowPurchase:(BeePayPopPurchaseConfigure*)configure withController:(UIViewController*)controller completion:(BeePayPopWindowCompletion)completionBlock;
+
+//检测内购是否在使用中
++ (void)checkUserPurchaseStatus:(BeePayCheckPurchaseStatus)completionBlock;
 
 @end
