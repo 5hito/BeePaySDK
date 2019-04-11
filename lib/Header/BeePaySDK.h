@@ -21,6 +21,7 @@ typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSStr
 
 @interface BeePayIapConfigure : NSObject
 
+@property (nonatomic, strong) NSString* appLanguage;//应用语言
 @property (nonatomic, strong) NSString* storeKitSharedSecret;//秘钥
 @property (nonatomic, strong) NSArray<NSString*>* renewalProductArr;//订阅项
 @property (nonatomic, strong) NSArray<NSString*>* consumablesArr;//消耗性，即一次性购买类型
@@ -40,5 +41,9 @@ typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSStr
 
 //检测内购是否在使用中
 + (void)checkUserPurchaseStatus:(BeePayCheckPurchaseStatus)completionBlock;
+
+//修改应用语言
++ (void)changeAppLanguage:(NSString*)language;
++ (NSString*)getAppLanguage;
 
 @end
