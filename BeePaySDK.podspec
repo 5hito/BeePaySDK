@@ -28,5 +28,6 @@ Pod::Spec.new do |s|
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
   s.dependency 'BeeAdMobNewSDK'
+  s.dependency 'KochavaTrackeriOS'
 
 end
