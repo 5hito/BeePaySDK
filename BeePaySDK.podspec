@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeePaySDK"
-  s.version      = "1.5.1"
+  s.version      = "1.5.2"
   s.summary      = "集合内购支付sdk"
   s.description  = <<-DESC
     0.0.x:苹果支付接口整合
@@ -28,5 +28,6 @@ Pod::Spec.new do |s|
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
   s.dependency 'BeeAdMobNewSDK'
+  s.dependency 'KochavaTrackeriOS'
 
 end
