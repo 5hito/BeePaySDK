@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BeePayPopPurchaseConfigure.h"
 
 typedef NS_ENUM(NSInteger, BeePayPopType) {
     BeePayPopCloseType = 0,//关闭
@@ -27,6 +26,7 @@ typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSStr
 @property (nonatomic, strong) NSArray<NSString*>* consumablesArr;//消耗性，即一次性购买类型
 
 @property (nonatomic, strong) NSString* rewardVideoUnitID;//谷歌激励视频广告id
+@property (nonatomic, strong) NSString* configFile;//配置文件
 
 @end
 
@@ -34,10 +34,11 @@ typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSStr
 
 //sdk初始化内购配置
 + (void)initPurchaseConfigs:(BeePayIapConfigure*)configure;
++ (BeePayIapConfigure*)getPurchaseConfigure;
 + (NSString*)getRewardVideoUnitID;//获取激励视频广告id
 
 //弹窗--controller不传，sdk默认是取最高层controller
-+ (void)showPopWindowPurchase:(BeePayPopPurchaseConfigure*)configure withController:(UIViewController*)controller completion:(BeePayPopWindowCompletion)completionBlock;
++ (BOOL)showPopWindowPurchaseWithController:(UIViewController*)controller completion:(BeePayPopWindowCompletion)completionBlock;
 
 //检测内购是否在使用中
 + (void)checkUserPurchaseStatus:(BeePayCheckPurchaseStatus)completionBlock;
@@ -45,5 +46,8 @@ typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSStr
 //修改应用语言
 + (void)changeAppLanguage:(NSString*)language;
 + (NSString*)getAppLanguage;
+
+//用户已经跳过广告后即将进入应用需要告知
++ (void)appWillEnterForeground;
 
 @end
