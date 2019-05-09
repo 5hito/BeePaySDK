@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @class BeePayShowAppPurchaseView;
+
 @protocol BeePayShowAppPurchaseViewDelegate <NSObject>
 
+@optional
 - (void)BeePayLoadPurchaseFailure:(BeePayShowAppPurchaseView*)purchaseView;
 - (void)BeePayClosePurchaseView:(BeePayShowAppPurchaseView*)purchaseView;
 
@@ -39,5 +39,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showPurchaseView;//引导页滑到内购页面后，需要设置此项
 
 @end
-
-NS_ASSUME_NONNULL_END
