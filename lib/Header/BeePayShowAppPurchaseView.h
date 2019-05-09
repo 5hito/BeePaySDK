@@ -22,12 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)BeePayUserClickPurchased:(NSString*)productID;
 - (void)BeePayUserPurchasedSuccess:(NSString*)productID;
-- (void)BeePayUserPurchasedFailed:(NSString*)productID;;
+- (void)BeePayUserPurchasedFailed:(NSString*)productID;
 
 @end
 
 @interface BeePayShowAppPurchaseView : UIView
 
+@property (nonatomic, assign) BOOL isAppGuide;
+@property (nonatomic, assign) BOOL isUseBackground;
 @property (nonatomic, weak) id<BeePayShowAppPurchaseViewDelegate> delegate;
 
 - (instancetype)initWithGuide:(BOOL)isGuide;//默认不使用

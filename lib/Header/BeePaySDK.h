@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, BeePayPopType) {
 
 typedef void (^BeePayPopWindowCompletion)(BOOL success, BeePayPopType type, NSString* productID);
 typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSString* productID, NSNumber* date);
+typedef void (^BeePayInternalPurchaseSuccess)(NSString* productID);
 
 @interface BeePayIapConfigure : NSObject
 
@@ -33,7 +34,7 @@ typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSStr
 @interface BeePaySDK : NSObject
 
 //sdk初始化内购配置
-+ (void)initPurchaseConfigs:(BeePayIapConfigure*)configure;
++ (void)initPurchaseConfigs:(BeePayIapConfigure*)configure withInternalPurchase:(BeePayInternalPurchaseSuccess)block;
 + (BeePayIapConfigure*)getPurchaseConfigure;
 + (NSString*)getRewardVideoUnitID;//获取激励视频广告id
 
