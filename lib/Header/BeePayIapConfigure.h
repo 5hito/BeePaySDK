@@ -35,9 +35,14 @@ typedef NS_ENUM(NSInteger, BeePayInternalStatus) {  //状态回调
     BeePayInternalRestoreFailureStatus,             //恢复购买失败
 };
 
+typedef NS_ENUM(NSInteger, BeePayInternalPosition) {  //位置
+    BeePayInternalAlertPostion = 1,                   //弹窗
+    BeePayInternalInsertPostion,                      //插屏
+};
+
 typedef void (^BeePayPopWindowCompletion)(BOOL success, BeePayPopType type, NSString* productID);
 typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSString* productID, NSNumber* date);
-typedef void (^BeePayInternalPurchaseSuccess)(BeePayInternalStatus status, BeePayPurchaseTemplate templateID, NSString* productID);
+typedef void (^BeePayInternalPurchaseSuccess)(BeePayInternalPosition position, BeePayInternalStatus status, BeePayPurchaseTemplate templateID, NSString* productID);
 
 @interface BeePayIapConfigure : NSObject
 
