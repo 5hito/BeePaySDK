@@ -23,7 +23,10 @@ typedef NS_ENUM(NSInteger, BeePayPurchaseTemplate) {  //模板id
 };
 
 typedef NS_ENUM(NSInteger, BeePayInternalStatus) {  //状态回调
-    BeePayInternalShowStatus = 1,                   //展示
+    BeePayInternalAlertCloseStatus = 1,             //订阅弹窗-关闭
+    BeePayInternalAlertGoStatus,                    //订阅弹窗-跳转
+    BeePayInternalShowStatus,                       //展示
+    BeePayInternalCloseStatus,                      //关闭
     BeePayInternalClickPurchaseStatus,              //点击购买
     BeePayInternalPurchaseSuccessStatus,            //购买成功
     BeePayInternalPurchaseFailureStatus,            //购买失败
