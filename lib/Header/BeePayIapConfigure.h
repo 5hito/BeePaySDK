@@ -15,9 +15,26 @@ typedef NS_ENUM(NSInteger, BeePayPopType) {
     BeePayPopPurchasedStateType = 3,
 };
 
+typedef NS_ENUM(NSInteger, BeePayPurchaseTemplate) {  //模板id
+    BeePayPurchaseGeneralTemplate = 1,                //通用模板
+    BeePayPurchasePopularTemplate = 2,                //热门模板
+    BeePayPurchaseTrialPeriodTemplate = 3,            //试用模板
+    BeePayPurchaseDiscountTemplate = 4,               //折扣模板
+};
+
+typedef NS_ENUM(NSInteger, BeePayInternalStatus) {  //状态回调
+    BeePayInternalShowStatus = 1,                   //展示
+    BeePayInternalClickPurchaseStatus,              //点击购买
+    BeePayInternalPurchaseSuccessStatus,            //购买成功
+    BeePayInternalPurchaseFailureStatus,            //购买失败
+    BeePayInternalClickRestoreStatus,               //点击恢复
+    BeePayInternalRestoreSuccessStatus,             //恢复购买成功
+    BeePayInternalRestoreFailureStatus,             //恢复购买失败
+};
+
 typedef void (^BeePayPopWindowCompletion)(BOOL success, BeePayPopType type, NSString* productID);
 typedef void (^BeePayCheckPurchaseStatus)(BOOL status, NSString* errorMsg, NSString* productID, NSNumber* date);
-typedef void (^BeePayInternalPurchaseSuccess)(NSString* productID);
+typedef void (^BeePayInternalPurchaseSuccess)(BeePayInternalStatus status, BeePayPurchaseTemplate templateID, NSString* productID);
 
 @interface BeePayIapConfigure : NSObject
 

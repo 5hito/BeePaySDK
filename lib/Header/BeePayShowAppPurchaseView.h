@@ -13,23 +13,26 @@
 @protocol BeePayShowAppPurchaseViewDelegate <NSObject>
 
 @optional
-- (void)BeePayLoadPurchaseFailure:(BeePayShowAppPurchaseView*)purchaseView;
-- (void)BeePayClosePurchaseView:(BeePayShowAppPurchaseView*)purchaseView;
 
-- (void)BeePayUserClickRestore;
-- (void)BeePayUserRestoreSuccess:(NSString*)productID;
-- (void)BeePayUserRestoreFailed;
+- (void)BeePayLoadPurchaseViewFailure:(BeePayShowAppPurchaseView*)purchaseView;
+- (void)BeePayLoadPurchaseViewSuccess:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID;
 
-- (void)BeePayUserClickPurchased:(NSString*)productID;
-- (void)BeePayUserPurchasedSuccess:(NSString*)productID;
-- (void)BeePayUserPurchasedFailed:(NSString*)productID;
+- (void)BeePayClosePurchaseView:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID;
+
+//恢复
+- (void)BeePayUserClickRestore:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID;
+- (void)BeePayUserRestoreSuccess:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
+- (void)BeePayUserRestoreFailed:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID;
+
+//购买
+- (void)BeePayUserClickPurchased:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
+- (void)BeePayUserPurchasedSuccess:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
+- (void)BeePayUserPurchasedFailed:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
 
 @end
 
 @interface BeePayShowAppPurchaseView : UIView
 
-@property (nonatomic, assign) BOOL isAppGuide;
-@property (nonatomic, assign) BOOL isUseBackground;
 @property (nonatomic, weak) id<BeePayShowAppPurchaseViewDelegate> delegate;
 
 - (instancetype)initWithGuide:(BOOL)isGuide;//默认不使用
