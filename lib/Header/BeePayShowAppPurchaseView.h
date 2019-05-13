@@ -25,9 +25,9 @@
 - (void)BeePayUserRestoreFailed:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID;
 
 //购买
-- (void)BeePayUserClickPurchased:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
-- (void)BeePayUserPurchasedSuccess:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
-- (void)BeePayUserPurchasedFailed:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withProductID:(NSString*)productID;
+- (void)BeePayUserClickPurchased:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withButtonPosition:(BeePayButtonPosition)buttonPosition withProductID:(NSString*)productID;
+- (void)BeePayUserPurchasedSuccess:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withButtonPosition:(BeePayButtonPosition)buttonPosition withProductID:(NSString*)productID;
+- (void)BeePayUserPurchasedFailed:(BeePayShowAppPurchaseView*)purchaseView withPurchaseTemplate:(BeePayPurchaseTemplate)templateID withButtonPosition:(BeePayButtonPosition)buttonPosition withProductID:(NSString*)productID;
 
 @end
 
