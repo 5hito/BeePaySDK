@@ -21,7 +21,7 @@
 + (void)checkUserPurchaseStatus:(BeePayCheckPurchaseStatus)completionBlock;
 
 //修改应用语言
-+ (void)changeAppLanguage:(NSString*)language;
++ (void)changeAppLanguage:(NSString*)language withConfigFile:(NSString*)configFile;
 
 //用户已经跳过广告后即将进入应用需要告知
 + (void)appWillEnterForeground;
