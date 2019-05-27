@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BeePayIapConfigure.h"
+#import "BeePayAppRecommendEntity.h"
 
 @interface BeePaySDK : NSObject
 
@@ -25,5 +26,8 @@
 
 //用户已经跳过广告后即将进入应用需要告知
 + (void)appWillEnterForeground;
+
+//应用内推荐
++ (void)showAppRecommend:(UIViewController*)superController success:(void (^)(BeePayAppRecommendEntity *entity))block;
 
 @end
