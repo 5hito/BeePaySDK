@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeePaySDK"
-  s.version      = "1.7.1"
+  s.version      = "1.7.2"
   s.summary      = "集合内购支付sdk"
   s.description  = <<-DESC
     0.0.x:苹果支付接口整合
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     1.5.x:添加Kochava
     1.6.x:添加新的模板
     1.7.0:remove ads
-    1.7.1:add app recommand
+    1.7.2:add app recommand
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeePaySDK"
@@ -31,5 +31,6 @@ Pod::Spec.new do |s|
   s.dependency 'BeeCommonSDK'
   s.dependency 'BeeAFNetSDK'
   s.dependency 'KochavaTrackeriOS'
+  s.dependency 'iCarousel'
 
 end
