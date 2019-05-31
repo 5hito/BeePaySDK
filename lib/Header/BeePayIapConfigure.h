@@ -38,8 +38,9 @@ typedef NS_ENUM(NSInteger, BeePayInternalStatus) {  //状态回调
 };
 
 typedef NS_ENUM(NSInteger, BeePayInternalPosition) {  //位置
-    BeePayInternalAlertPostion = 1,                   //弹窗
-    BeePayInternalInsertPostion,                      //插屏
+    BeePayInternalAlertPosition = 1,                   //弹窗
+    BeePayInternalInsertPosition,                      //插屏
+    BeePayInternalRecommandPosition,                   //应用推荐
 };
 
 typedef NS_ENUM(NSInteger, BeePayButtonPosition) {  //按钮位置

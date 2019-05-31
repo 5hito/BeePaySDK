@@ -12,12 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BeePayAppRecommendEntity : NSObject
 
+@property (nonatomic, assign) BOOL appIsPro;
+@property (nonatomic, assign) BOOL bSupportSubs;
 @property (nonatomic, strong) NSString* appName;
 @property (nonatomic, strong) NSString* appDescribe;
-@property (nonatomic, strong) NSString* appBundleId;
-@property (nonatomic, strong) NSString* appId;
+@property (nonatomic, strong) NSString* appBundleID;
+@property (nonatomic, strong) NSString* appID;
 @property (nonatomic, strong) NSString* appImage;
-@property (nonatomic, assign) BOOL appIsPro;
+@property (nonatomic, strong) NSString* teamID;
+@property (nonatomic, strong) NSString* appProID;
+@property (nonatomic, strong) NSArray<NSString*>* subsColors;
 
 @end
 

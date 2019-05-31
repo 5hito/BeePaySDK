@@ -7,28 +7,48 @@
 		<string>实况天气Pro</string>
 		<key>appDescribe</key>
 		<string>精准15日天气预报与降雨预报，无广告版本</string>
-		<key>appBundleId</key>
+		<key>appBundleID</key>
 		<string>Bee.liveWeatherPro.app</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1437256011</string>
 		<key>appImage</key>
 		<string>liveWeather</string>
 		<key>appIsPro</key>
 		<true/>
+		<key>teamID</key>
+		<string>PUA574JL8C</string>
+		<key>bSupportSubs</key>
+		<true/>
+		<key>subsColors</key>
+		<array>
+			<string>#1E80FF</string>
+			<string>#32C8FE</string>
+		</array>
 	</dict>
 	<dict>
 		<key>appName</key>
 		<string>实况天气</string>
 		<key>appDescribe</key>
 		<string>15天预报空气质量和天气实况精准查询</string>
-		<key>appBundleId</key>
+		<key>appBundleID</key>
 		<string>Bee.liveWeather.app</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1406209692</string>
 		<key>appImage</key>
 		<string>liveWeather</string>
 		<key>appIsPro</key>
 		<false/>
+		<key>teamID</key>
+		<string>PUA574JL8C</string>
+		<key>bSupportSubs</key>
+		<true/>
+		<key>appProID</key>
+		<string>1437256011</string>
+		<key>subsColors</key>
+		<array>
+			<string>#1E80FF</string>
+			<string>#32C8FE</string>
+		</array>
 	</dict>
 	<dict>
 		<key>appName</key>
@@ -36,27 +56,40 @@
 		<key>appDescribe</key>
 		<string>权威雷达图覆盖
 天气实时追踪</string>
-		<key>appBundleId</key>
+		<key>appBundleID</key>
 		<string>Com.BeeApp.MapWeather</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1449693594</string>
 		<key>appImage</key>
 		<string>mapWeather</string>
 		<key>appIsPro</key>
 		<false/>
+		<key>teamID</key>
+		<string>PUA574JL8C</string>
+		<key>bSupportSubs</key>
+		<true/>
+		<key>subsColors</key>
+		<array>
+			<string>#FFD321</string>
+			<string>#FDB445</string>
+		</array>
 	</dict>
 	<dict>
 		<key>appName</key>
 		<string>音乐播放器</string>
 		<key>appDescribe</key>
 		<string>离线手机云音乐播放器</string>
-		<key>appBundleId</key>
+		<key>appBundleID</key>
 		<string>BeeApp.OfflineCloudMusic.en</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1399352160</string>
 		<key>appImage</key>
 		<string>music</string>
 		<key>appIsPro</key>
+		<false/>
+		<key>teamID</key>
+		<string>PUA574JL8C</string>
+		<key>bSupportSubs</key>
 		<false/>
 	</dict>
 	<dict>
@@ -64,13 +97,17 @@
 		<string>全能扫描仪</string>
 		<key>appDescribe</key>
 		<string>高清快速扫描文件，智能OCR文本识别</string>
-		<key>appBundleId</key>
+		<key>appBundleID</key>
 		<string>BeeApp.Scanner.OCR</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1435757309</string>
 		<key>appImage</key>
 		<string>ocr</string>
 		<key>appIsPro</key>
+		<false/>
+		<key>teamID</key>
+		<string>PUA574JL8C</string>
+		<key>bSupportSubs</key>
 		<false/>
 	</dict>
 </array>
