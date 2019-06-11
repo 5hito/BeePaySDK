@@ -4,12 +4,12 @@
 <array>
 	<dict>
 		<key>appName</key>
-		<string>Live Weather Pro</string>
+		<string>LIveПогода Pro</string>
 		<key>appDescribe</key>
-		<string>free to view 15 days weather forecast.Pro version pure without ads.</string>
-		<key>appBundleId</key>
+		<string>бесплатно просматривать прогноз погоды на 15 дней. Версия Pro чисто без рекламы.</string>
+		<key>appBundleID</key>
 		<string>Bee.liveWeatherPro.app</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1437256011</string>
 		<key>appImage</key>
 		<string>liveWeather</string>
@@ -27,12 +27,12 @@
 	</dict>
 	<dict>
 		<key>appName</key>
-		<string>Live Weather</string>
+		<string>погода Живая</string>
 		<key>appDescribe</key>
-		<string>Live weather provides accurate weather forecasts around the world.</string>
-		<key>appBundleId</key>
+		<string>Живая погода обеспечивает точные прогнозы погоды по всему миру.</string>
+		<key>appBundleID</key>
 		<string>Bee.liveWeather.app</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1406209692</string>
 		<key>appImage</key>
 		<string>liveWeather</string>
@@ -52,11 +52,11 @@
 		<key>appName</key>
 		<string>Weather Radar</string>
 		<key>appDescribe</key>
-		<string>Authoritative radar map coverage
+		<string>Официальное покрытие радиолокационной карты
 Weather tracking</string>
-		<key>appBundleId</key>
+		<key>appBundleID</key>
 		<string>Com.BeeApp.MapWeather</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1449693594</string>
 		<key>appImage</key>
 		<string>mapWeather</string>
@@ -76,10 +76,10 @@ Weather tracking</string>
 		<key>appName</key>
 		<string>offline music</string>
 		<key>appDescribe</key>
-		<string>Easily download music from clouds to your device and play offline.</string>
-		<key>appBundleId</key>
+		<string>Легко загружайте музыку из облаков на свое устройство и играйте в автономном режиме.</string>
+		<key>appBundleID</key>
 		<string>BeeApp.OfflineCloudMusic.en</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1399352160</string>
 		<key>appImage</key>
 		<string>music</string>
@@ -92,10 +92,10 @@ Weather tracking</string>
 		<key>appName</key>
 		<string>Scanner</string>
 		<key>appDescribe</key>
-		<string>The easiest and most easy to use photo capture artifact.</string>
-		<key>appBundleId</key>
+		<string>Самый простой и удобный в использовании артефакт захвата фотографий.</string>
+		<key>appBundleID</key>
 		<string>BeeApp.Scanner.OCR</string>
-		<key>appId</key>
+		<key>appID</key>
 		<string>1435757309</string>
 		<key>appImage</key>
 		<string>ocr</string>
