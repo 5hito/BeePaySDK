@@ -30,4 +30,5 @@
 //应用内推荐
 + (void)showAppRecommend:(UIViewController*)superController success:(void (^)(BeePayAppRecommendEntity *entity))block;
 
++ (void)testAppstorePurchsae:(NSString*)product;
 @end

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeePaySDK"
-  s.version      = "1.9.0"
+  s.version      = "1.9.1"
   s.summary      = "集合内购支付sdk"
   s.description  = <<-DESC
     0.0.x:苹果支付接口整合
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
     1.8.8:fix bugs
     1.8.9:fix bugs
     1.9.0:fix bugs
+    1.9.1:修改App Store内购跳转
                    DESC
 
   s.homepage     = "https://github.com/5hito/BeePaySDK"
